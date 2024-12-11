@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Trivia Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Start Screen -->
+  <div class="start-container" id="start-container">
+    <h1>🎄 Welcome to the Holiday Trivia Quiz! 🎄</h1>
+    <button class="start-button" onclick="startTrivia()">Start Trivia</button>
+  </div>
+
+  <!-- Quiz Content -->
+  <div class="quiz-container" id="quiz-container" style="display: none;">
+    <h1>---------- Holiday Trivia Quiz ----------</h1>
+    <div class="question-container">
+      <p id="question" class="question"></p>
+    </div>
+    <div id="options-container" class="options-container"></div>
+    <div class="result-container" id="result-container" style="display: none;">
+      <p id="result" class="result"></p>
+    </div>
+    <button class="submit-button" onclick="checkAnswer()" style="display: none;">Submit Answer</button>
+    <button class="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+  </div>
+
+  <!-- End Screen -->
+  <div class="end-container" id="end-container" style="display: none;">
+    <h1> ❄️ Congratulations! ❄️ </h1>
+    <p>You've completed the Holiday Trivia Quiz! You might not have agreed with some of the answers, but hey, that’s
+      just because you're a little lame. Call me a geek or a nerd, I don’t mind—but you’ve got to admit, this was pretty
+      fun to play. Merry Christmas!</p>
+    <button class="start-button" onclick="restartTrivia()">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
