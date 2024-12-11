@@ -94,21 +94,21 @@ function loadQuestion() {
   });
 
   // Handle option selection and change button color
-const options = document.querySelectorAll('.option');
-const submitButton = document.querySelector('.submit-button');
+  const options = document.querySelectorAll('.option');
+  const submitButton = document.querySelector('.submit-button');
 
-// Add event listener to each option
-options.forEach(option => {
-  option.addEventListener('click', () => {
-    // Remove 'selected' class from all options
-    options.forEach(o => o.classList.remove('selected'));
+  // Add event listener to each option
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      // Remove 'selected' class from all options
+      options.forEach(o => o.classList.remove('selected'));
 
-    // Add 'selected' class to the clicked option
-    option.classList.add('selected');
+      // Add 'selected' class to the clicked option
+      option.classList.add('selected');
 
-    // Change the button color when an option is selected
+      // Change the button color when an option is selected
+    });
   });
-});
 
   // Toggle buttons
   document.querySelector('.submit-button').style.display = "block";
@@ -140,7 +140,7 @@ function checkAnswer() {
   }
 
   resultContainer.style.display = "block";
-  
+
 }
 
 // Next Question
