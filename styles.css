@@ -36,6 +36,7 @@ h1 {
 /* Question Container */
 .question-container {
   margin-bottom: 20px;
+  max-width: 900px;
 }
 
 .question {
@@ -163,9 +164,22 @@ button:disabled {
     font-size: 1.1em;
   }
 
+  .question-container {
+    margin-bottom: 20px;
+    max-width: 500px;
+    text-align: center;
+  }
+
   .option {
     font-size: 1em;
     padding: 8px;
+  }
+  .options-container {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 
   .start-button,
